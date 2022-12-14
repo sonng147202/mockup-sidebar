@@ -1,0 +1,71 @@
+@media (max-width: 992px) {
+    :root {
+        --font-large: 19px;
+        --font-medium: 17px;
+        --font-small: 15px;
+        --font-tiny: 13px;
+        --font-vr-tiny: 11px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .wrap-article {
+        display: flex;
+        flex-direction: column;
+    }
+    .w-100-tab {
+        width: 100%;
+    }
+    .mt-3-tab {
+        margin-top: 15px;
+    }
+
+}
+@media (max-width: 576px) {
+    :root {
+        --font-large: 18px;
+        --font-medium: 16px;
+        --font-small: 15px;
+        --font-tiny: 13px;
+        --font-vr-tiny: 12px;
+    }
+    .btn {
+        font-size: var(--font-small);
+    }
+    .question-summary {
+        flex-direction: column;
+    }
+    .summary {
+        margin-left: 0;
+    }
+    .number-count {
+        padding-right: 5px;
+    }
+    .pl-0-mb {
+        padding-left: 0;
+    }
+    .item-post-news-right a h6 {
+        font-size: var(--font-small);
+    }
+    .avatar {
+        width: 17px ;
+        height: 17px ;
+        border-radius: 50%;
+        margin: 0 2px;
+        box-shadow: 0 0 0 2px rgb(147 112 219 / 50%);
+        object-fit: cover;
+    }
+    .avatar-make-article {
+        min-width: 36px;
+        height: 35px;
+        box-shadow: 0 0 0 3px rgb(147 112 219 / 50%);
+    }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 100%!important;
+    }
+}

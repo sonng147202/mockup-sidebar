@@ -1,0 +1,13 @@
+{
+  "name": "mockup-sidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.6.1.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass master.scss style.css",
+    "watch": "sass --watch master.scss:style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
