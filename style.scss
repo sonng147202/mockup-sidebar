@@ -14,6 +14,7 @@
     --header-width: 100%;
     --header-height: 55px;
     --bg-header: #1e272e;
+    --bg-rgba-header: rgba(30, 39, 46, 0.8);
     --bg-sidebar: #1e272e;
     --bg-light-sidebar: #dcdde1;
     --sidebar-width: 220px;
@@ -302,7 +303,7 @@ svg {
 	justify-content: space-between;
     width: var(--header-width);
     height: var(--header-height);
-	background-color: var(--bg-header);
+	background-color: var(--bg-rgba-header);
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     &__logo{
 		width: var(--sidebar-width);
