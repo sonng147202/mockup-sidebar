@@ -15,7 +15,7 @@
     <div id="main">
         <div class="main-content">
             <div class="sidebar">
-                <div class="sidebar__container">
+                <div class="sidebar__container group-btn">
                     <a href="#" class="sidebar__btn sidebar__btn--register">
                         <i class="fa-solid fa-user-plus"></i>
                         Đăng ký
@@ -24,6 +24,56 @@
                         <i class="fa-regular fa-user"></i>
                         Đăng nhập
                     </a>
+                </div>
+                <div class="sidebar__container group-link">
+                    <h3 class="sidebar__title">Pages</h3>
+                    <ul class="sidebar__nav">
+                        <li class="sidebar__nav-item">
+                            <a href="#" class="sidebar__nav-link sidebar__nav-extend">
+                                <span>Link</span>
+                                <i class="sidebar__nav-icon fa-solid fa-chevron-right"></i>
+                            </a>
+                            <div class="sidebar__navsub hide">
+                                <ul class="sidebar__navsub-list">
+                                    <li class="sidebar__navsub-item">
+                                        <a href="#" class="sidebar__navsub-link">
+                                            Sub link
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__navsub-item">
+                                        <a href="#" class="sidebar__navsub-link">
+                                            Sub link
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__navsub-item">
+                                        <a href="#" class="sidebar__navsub-link">
+                                            Sub link
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <a href="#" class="sidebar__nav-link">
+                                Link
+                            </a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <a href="#" class="sidebar__nav-link">
+                                Link
+                            </a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <a href="#" class="sidebar__nav-link">
+                                Link
+                            </a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <a href="#" class="sidebar__nav-link">
+                                Link
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="content-wrapper">
@@ -112,6 +162,13 @@
 
         btnToggleSidebar.click(function () {
             sidebarBox.toggleClass("hide")
+        })
+
+        // Sidebar/Navsub
+        var sidebarNavExtend = $(".sidebar .sidebar__nav-extend")
+        var sidebarNavsub = $(".sidebar .sidebar__navsub")
+        sidebarNavExtend.click(function () {
+            sidebarNavsub.toggleClass("hide")
         })
     </script>
 </body>
