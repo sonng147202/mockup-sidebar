@@ -21,6 +21,35 @@
     }
 
 }
+@media (max-width: 768px) {
+    .main-content .sidebar{
+        width: 100%;
+        z-index: 110;
+        &.hide{
+        }
+        &__nav{
+            &sub{
+                position: unset;
+                display: block;
+                &.hide{
+                    height: 0;
+                    transition: var(--tran-04);
+                }
+                &-list{
+                    height: auto;
+                    padding: 0;
+                    background-color: #2C3A47;
+                }
+                &-link{
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    .main-content .content-wrapper{
+        margin-left: 0;
+    }
+}
 @media (max-width: 576px) {
     :root {
         --font-large: 18px;

@@ -15,6 +15,9 @@
     <div id="main">
         <div class="main-content">
             <div class="sidebar">
+                <div class="sidebar__btn sidebar__btn--close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
                 <div class="sidebar__container group-btn">
                     <a href="#" class="sidebar__btn sidebar__btn--register">
                         <i class="fa-solid fa-user-plus"></i>
@@ -31,7 +34,8 @@
                         <li class="sidebar__nav-item">
                             <a href="#" class="sidebar__nav-link sidebar__nav-extend">
                                 <span>Link</span>
-                                <i class="sidebar__nav-icon fa-solid fa-chevron-right"></i>
+                                <i class="sidebar__nav-icon d-none d-md-block fa-solid fa-chevron-right"></i>
+                                <i class="sidebar__nav-icon d-block d-md-none fa-solid fa-chevron-down"></i>
                             </a>
                             <div class="sidebar__navsub hide">
                                 <ul class="sidebar__navsub-list">
@@ -159,17 +163,37 @@
         // Sidebar
         var sidebarBox = $(".main-content .sidebar")
         var btnToggleSidebar = $(".header .header__btn-sidebar")
+        var btnCloseSidebar = $(".sidebar .sidebar__btn--close")
+
 
         btnToggleSidebar.click(function () {
             sidebarBox.toggleClass("hide")
         })
 
+        btnCloseSidebar.click(function () {
+            sidebarBox.addClass("hide")
+        })
+
         // Sidebar/Navsub
         var sidebarNavExtend = $(".sidebar .sidebar__nav-extend")
         var sidebarNavsub = $(".sidebar .sidebar__navsub")
+        var sidebarNavIcon = $(".sidebar .sidebar__nav-icon")
+        
         sidebarNavExtend.click(function () {
             sidebarNavsub.toggleClass("hide")
         })
+
+        // Responsive
+        $(window).resize(function() {
+            var width = $(window).width();
+
+            // max-width: 768px
+            if (width <= 768){
+                // Sidebar
+                sidebarBox.addClass("hide")
+
+            }
+        });
     </script>
 </body>
 </html>
